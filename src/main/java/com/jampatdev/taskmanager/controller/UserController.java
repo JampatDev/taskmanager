@@ -16,19 +16,6 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping
-    public ResponseEntity<String> registerUser(@RequestBody User user) {
-        if (userService.emailExists(user.getEmail())){
-            return ResponseEntity.badRequest().body("Email already in use");
-        }
-        if (userService.usernameExists(user.getUsername())) {
-            return ResponseEntity.badRequest().body("Username already in use");
-        }
-
-        userService.saveUser(user);
-        return ResponseEntity.ok("User registered successfully");
-    }
-
     @GetMapping("/email/{email}")
     public ResponseEntity<User> getUserByEmail(@PathVariable String email) {
         Optional<User> user = userService.getUserByEmail(email);
