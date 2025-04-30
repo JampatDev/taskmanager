@@ -92,21 +92,21 @@
 
 ### Authentication
 
- Method  Path                  Description               
- ------  --------------------  ------------------------- 
- POST    `/api/auth/register`  Register new user         
- POST    `/api/auth/login`     Login & receive JWT token 
+| Method | Path                 | Description               |
+| ------ | -------------------- | ------------------------- |
+| POST   | `/api/auth/register` | Register new user         |
+| POST   | `/api/auth/login`    | Login & receive JWT token |
 
 ### Tasks (JWT Required)
 
- Method | Path                          Description                                
- ------  ----------------------------  ------------------------------------------ 
- POST    `/api/tasks`                  Create a new task                          
- GET     `/api/tasks`                  List all your tasks                        
- GET     `/api/tasks/{id}`             Get a single task by ID                    
- GET     `/api/tasks/status/{status}`  Filter tasks by status                     
- PUT     `/api/tasks/{id}`             Update title, description, dueDate, status 
- DELETE  `/api/tasks/{id}`             Delete a task                              
+| Method | Path                         | Description                                |
+| ------ | ---------------------------- | ------------------------------------------ |
+| POST   | `/api/tasks`                 | Create a new task                          |
+| GET    | `/api/tasks`                 | List all your tasks                        |
+| GET    | `/api/tasks/{id}`            | Get a single task by ID                    |
+| GET    | `/api/tasks/status/{status}` | Filter tasks by status                     |
+| PUT    | `/api/tasks/{id}`            | Update title, description, dueDate, status |
+| DELETE | `/api/tasks/{id}`            | Delete a task                              |
 
 ---
 
@@ -115,6 +115,9 @@
 - **Postman collection**: [`postman_collection.json`](docs/postman_collection.json)
 
 ---
+
+
+
 
 
 
