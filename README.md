@@ -108,11 +108,6 @@
 | PUT    | `/api/tasks/{id}`            | Update title, description, dueDate, status |
 | DELETE | `/api/tasks/{id}`            | Delete a task                              |
 
----
-
-## Testing
-
-- **Postman collection**: [`postman_collection.json`](docs/postman_collection.json)
 
 ---
 
